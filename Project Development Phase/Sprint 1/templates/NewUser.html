@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plasma Donor</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    background-color: #0a0a0a;
+padding: 20px;
+    justify-content: space-around;
+
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover{
+    color: #ffffff;
+}
+a:hover:after{
+    width: 100%;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+<!-- header -->
+<nav>
+	  <a href="/">Home</a>
+					<a href="/AdminLogin" >AdminLogin</a>
+					<a href="/DonorLogin">DonorLogin</a>
+					<a href="/NewDonor">NewDonor</a>
+					<a href="/UserLogin">UserLogin</a>
+					<a href="/NewUser">NewUser</a>
+</nav>
+<!-- header -->
+
+
+
+<!-- header -->
+<!-- banner -->
+<img src="static/images/pla.png" alt="" height="500px" width="100%"
+style="background-color:lightgray;">
+
+
+</br></br></br>
+
+
+
+
+
+<!-- //banner -->
+<div class="about all_pad">
+	<div class="container">
+		<h3 class="title">New User Registration</h3>
+
+		<form id="form1" name="form1" method="post" action="/newuser">
+              <table width="35%" border="0" align="center">
+
+    <tr>
+          <td></td>
+    </tr>
+    <tr>
+      <td width="45%" height="48">Name</td>
+      <td width="55%"><input name="name" type="text" id="name"  required pattern="[A-Za-z ]{3,32}"/>
+      </td>
+    </tr>
+    <tr>
+      <td height="50">Gender</td>
+      <td><input name="gender" type="radio" value="male" required />
+        Male
+          <input name="gender" type="radio" value="female" />
+          Female</td>
+
+    </tr>
+    <tr>
+      <td height="49">Age</td>
+      <td>
+        <input name="age" type="text" id="age" required size="3" />
+      </td>
+    </tr>
+    <tr>
+      <td height="48">Email Id</td>
+      <td><input name="email" type="email" id="email" required /></td>
+    </tr>
+	  <tr>
+      <td height="46">Phone Number </span></td>
+      <td><input name="phone" type="text" id="phone"   required size="10" pattern="0-9]{9}"/></td>
+    </tr>
+
+
+	   <tr>
+      <td height="50">Address</td>
+      <td><textarea name="address" id="address" required></textarea></td>
+       </tr>
+
+    <tr>
+      <td height="40">User Name</td>
+      <td><input name="uname" type="text" id="uname"  required/></td>
+    </tr>
+
+
+    <tr>
+     <td height="53">Passwrod</td>
+      <td><input name="psw" type="password" id="psw"  required/></td>
+    </tr>
+
+	<tr>
+      <td height="72">&nbsp;</td>
+      <td><input name="btn" type="submit" id="btn" value="Submit" />
+      <input type="reset" name="Submit2" value="Reset" /></td>
+    </tr>
+  </table>
+            </form>
+
+	</div>
+</div>
+
+</br></br>
+<footer style="padding:20px;background-color: black;">
+	<p style="text-align: center;color:white;">Copyright to plasma donation hub</p>
+</footer>
+</body>
+</html>
