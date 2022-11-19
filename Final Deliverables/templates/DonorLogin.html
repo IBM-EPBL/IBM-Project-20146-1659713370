@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plasma Donor</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    background-color: #0a0a0a;
+padding: 20px;
+    justify-content: space-around;
+
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover{
+    color: #ffffff;
+}
+a:hover:after{
+    width: 100%;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+<br>
+
+<nav>
+		<li><a href="/">Home</a></li>
+					<li><a href="/AdminLogin" >AdminLogin</a></li>
+					<li><a href="/DonorLogin">DonorLogin</a></li>
+					<li><a href="/NewDonor">NewDonor</a></li>
+					<li><a href="/UserLogin">UserLogin</a></li>
+					<li><a href="/NewUser">NewUser</a></li>
+	<div class="animation start-home"></div>
+</nav>
+<!-- header -->
+
+
+
+<!-- header -->
+<!-- banner -->
+<img src="static/images/pla.png" alt="" height="500px" width="100%"
+style="background-color:lightgray;">
+
+
+</br></br></br>
+<!-- //banner -->
+<div class="about all_pad">
+	<div class="container">
+		<h3 class="title" ALIGN="center">Donor Login Here..!</h3>
+
+		<form id="form1" name="form1" method="post" action="/donorlogin">
+	   <table width="100%" border="0" align="center">
+                <tr>
+                  <th scope="col">&nbsp;</th>
+                  <th scope="col">&nbsp;</th>
+                  <th colspan="2" scope="col"><span class="style4"> </span></th>
+                  <th scope="col">&nbsp;</th>
+                  <th scope="col">&nbsp;</th>
+                </tr>
+                <tr>
+                  <th width="9%" scope="col">&nbsp;</th>
+                  <th width="20%" scope="col">&nbsp;</th>
+                  <th width="20%" scope="col">&nbsp;</th>
+                  <th width="22%" scope="col">&nbsp;</th>
+                  <th width="24%" scope="col">&nbsp;</th>
+                  <th width="5%" scope="col">&nbsp;</th>
+                </tr>
+                <tr>
+                  <td height="35">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><span class="style3">User Name </span></td>
+                  <td><input name="uname" type="text" id="uname" /></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height="38">&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><span class="style3">Password</span></td>
+                  <td><input name="password" type="password" id="password" /></td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td><input name="bnt" type="submit" id="bnt" value="Login" />
+
+                    <input type="reset" name="Reset" value="Reset">
+                    </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+</form>
+
+	</div>
+</div>
+
+<!-- contact -->
+
+</br></br>
+<footer style="padding:20px;background-color: black;">
+	<p style="text-align: center;color:white;">Copyright to plasma donation hub</p>
+</footer>
+</body>
+</html>
